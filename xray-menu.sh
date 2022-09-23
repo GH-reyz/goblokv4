@@ -1057,7 +1057,7 @@ menu_sts() {
 clear
 echo -e ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Client Name   : LukaVPN"
+echo -e "Premium Script By Reyz-V4
 echo -e "Expiry script : Never Expired"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[44;1;39m               ⇱ MULTIPORT MENU ⇲                 \E[0m"
