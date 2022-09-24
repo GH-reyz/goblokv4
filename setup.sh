@@ -76,8 +76,8 @@ fi
 echo -e "${RED}Installing XRAY${NC}"
 sleep 2
 
-wget https://raw.githubusercontent.com/GH-reyz/goblokv4/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/GH-reyz/goblokv4/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget -O ins-xray "https://raw.githubusercontent.com/GH-reyz/goblokv4/main/ins-xray.sh" && chmod +x ins-xray.sh && ./ins-xray.sh
+wget -O ssh-vpn "https://raw.githubusercontent.com/GH-reyz/goblokv4/main/ssh-vpn.sh" && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/GH-reyz/goblokv4/main/xray-menu.sh" && chmod +x menu
 wget -O xp "https://raw.githubusercontent.com/GH-reyz/goblokv4/main/xp.sh" && chmod +x xp
