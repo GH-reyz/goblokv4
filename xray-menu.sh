@@ -1038,8 +1038,9 @@ restore_vps() {
     menu
 }
 
-Name=$(curl -sS https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $MYIP | awk '{print $2}')
-Exp=$(curl -sS https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $MYIP | awk '{print $3}')
+# CLIENT INFOMATION
+Name=$(curl -sS https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $IPVPS | awk '{print $2}')
+Exp=$(curl -sS https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $IPVPS | awk '{print $3}')
 IPVPS=$(curl -s icanhazip.com)
 DOMAIN=$(cat /etc/v2ray/domain)
 ISP=$(curl -sS ip-api.com | grep -w "isp" | awk '{print $3,$4,$5,$6,$7,$8,$9}' | cut -d'"' -f2 | cut -d',' -f1 | tee -a /etc/afak.conf)
