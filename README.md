@@ -1,4 +1,6 @@
-# Autoscript VPS By Reyz-V4 (Ubuntu 18-20/Debian 10)
+
+# Autoscript VPS MultiPort By Reyz-V4 (Ubuntu 18-20/Debian 10)
+OVPN / SSH / XRAY VMESS / XRAY VLESS / XRAY TROJAN 
 
 ![OS](https://shields.io/badge/OS-Ubuntu%2018+-green?logo=ubuntu&style=for-the-badge) 
 ![OS](https://shields.io/badge/OS-Debian%2010+-green?logo=debian&style=for-the-badge)
@@ -12,6 +14,10 @@
 ![BadVPN UDPGw](https://shields.io/badge/Service-BadVPN%20UDPGw-orange?logo=ublockorigin&style=for-the-badge) 
 ![Xray](https://shields.io/badge/Service-Xray-orange?logo=xstate&style=for-the-badge) 
 ![Nginx](https://shields.io/badge/Service-Nginx-orange?logo=onnx&style=for-the-badge)
+
+Salam. Ini merupakan sebuah script yang memudahkan para seller VPN untuk install package-package yang diperlukan untuk berjualan VPN.
+
+
 
 
 
