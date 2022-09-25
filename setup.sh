@@ -69,20 +69,20 @@ clear
 
 # Script Access 
 MYIP=$(wget -qO- icanhazip.com);
-
 echo -e "${green}CHECKING SCRIPT ACCESS${NC}"
 sleep 2
 IZIN=$(curl https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $MYIP | awk '{print $4}')
 if [ $MYIP = $IZIN ]; then
-    echo -e ""
-    echo -e "${GREEN}ACCESS GRANTED...${NC}"
-    sleep 2
-else
-	echo -e ""
-    echo -e "${GREEN}ACCESS DENIED...PM TELEGRAM OWNER${NC}"
-    sleep 2
-    rm -f setup.sh
-    exit 1
+echo -e ""
+echo -e "${GREEN}ACCESS GRANTED...${NC}"
+sleep 2
+else 
+
+echo -e ""
+echo -e "${GREEN}ACCESS DENIED...PM TELEGRAM OWNER${NC}"
+sleep 2
+rm -f setup.sh
+exit 1
 fi
 clear
 
