@@ -66,6 +66,26 @@ apt-get install socat -y
 apt install figlet -y
 apt install git -y
 clear
+
+# Script Access 
+MYIP=$(wget -qO- icanhazip.com);
+
+echo -e "${green}CHECKING SCRIPT ACCESS${NC}"
+sleep 2
+IZIN=$(curl https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $MYIP | awk '{print $4}')
+if [ $MYIP = $IZIN ]; then
+    echo -e ""
+    echo -e "${GREEN}ACCESS GRANTED...${NC}"
+    sleep 2
+else
+	echo -e ""
+    echo -e "${GREEN}ACCESS DENIED...PM TELEGRAM OWNER${NC}"
+    sleep 2
+    rm -f setup.sh
+    exit 1
+fi
+clear
+
 echo "Please Input Your Domain Name"
 read -p "Input Your Domain : " host
 if [ -z $host ]; then
@@ -73,19 +93,6 @@ if [ -z $host ]; then
 else
     echo $host >/root/domain
 fi
-echo -e "CHECKING SCRIPT ACCESS${NC}"
-sleep 2
-IZIN=$(curl https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $MYIP | awk '{print $4}')
-if [ $MYIP = $IZIN ]; then
-    echo -e ""
-    echo -e "ACCESS GRANTED...${NC}"
-    sleep 2
-else
-	echo -e ""
-    echo -e "${green}ACCESS DENIED...PM TELEGRAM OWNER${NC}"
-    sleep 2
-    rm -f setup.sh
-    exit 1
 echo -e "${RED}Installing XRAY${NC}"
 sleep 2
 
