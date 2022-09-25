@@ -17,7 +17,7 @@ OVPN / SSH / XRAY VMESS / XRAY VLESS / XRAY TROJAN
 
 # Script Preview
 <p align="center">
-<img src="https://i.postimg.cc/CKC85Ymm/IMG-20220925-160436.jpg">
+<img src="https://i.postimg.cc/yYn0BZzB/IMG-20220926-001212.jpg">
 
 Salam. Ini merupakan sebuah script yang memudahkan para seller VPN untuk install package-package yang diperlukan untuk berjualan VPN.
                               
