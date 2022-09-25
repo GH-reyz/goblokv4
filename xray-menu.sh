@@ -1060,7 +1060,7 @@ menu_sts() {
 clear
 echo -e ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[44;1;34m               ⇱ •SERVER INFORMATION• ⇲  \E[0m"
+echo -e "\E[44;1;34m               ⇱ •SERVER INFORMATION• ⇲           \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[0m • IP VPS Number          :  $IPVPS "
 echo -e "\e[0m • Domain Name          : $DOMAIN "
