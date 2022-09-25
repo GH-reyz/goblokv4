@@ -20,6 +20,17 @@ OVPN / SSH / XRAY VMESS / XRAY VLESS / XRAY TROJAN
 <img src="https://i.postimg.cc/CKC85Ymm/IMG-20220925-160436.jpg">
 
 Salam. Ini merupakan sebuah script yang memudahkan para seller VPN untuk install package-package yang diperlukan untuk berjualan VPN.
+                              
+- OpenVPN                    : TCP 1194, UDP 2200, SSL 442
+- Stunnel4                   : 789, 777
+- Squid Proxy                : 3128, 8080
+- VLess TCP XTLS             : 443
+- XRAY  Trojan TLS           : 443
+- XRAY  Vmess TLS            : 443
+- XRAY  Vmess None TLS       : 80
+- XRAY  Vless TLS            : 443
+- XRAY  Vless None TLS       : 8000 
+
 
 Berminat ? PM @GHReyz
 
