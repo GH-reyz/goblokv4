@@ -15,7 +15,13 @@ OVPN / SSH / XRAY VMESS / XRAY VLESS / XRAY TROJAN
 ![Xray](https://shields.io/badge/Service-Xray-orange?logo=xstate&style=for-the-badge) 
 ![Nginx](https://shields.io/badge/Service-Nginx-orange?logo=onnx&style=for-the-badge)
 
+# Script Preview
+<p align="center">
+<img src="https://i.postimg.cc/CKC85Ymm/IMG-20220925-160436.jpg">
+
 Salam. Ini merupakan sebuah script yang memudahkan para seller VPN untuk install package-package yang diperlukan untuk berjualan VPN.
+
+Berminat ? PM @GHReyz
 
 
 
