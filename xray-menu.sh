@@ -1042,7 +1042,7 @@ restore_vps() {
 Name=$(curl -sS https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $IPVPS | awk '{print $2}')
 Exp=$(curl -sS https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $IPVPS | awk '{print $3}')
 IPVPS=$(curl -s icanhazip.com)
-DOMAIN=$(cat /etc/v2ray/domain)
+DOMAIN=$(cat /etc/$bec/domain)
 ISP=$(curl -sS ip-api.com | grep -w "isp" | awk '{print $3,$4,$5,$6,$7,$8,$9}' | cut -d'"' -f2 | cut -d',' -f1 | tee -a /etc/afak.conf)
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 
@@ -1065,8 +1065,6 @@ echo -e "\E[44;1;39m               ⇱ • INFORMATION • ⇲                \E
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[0m IP VPS Number       : $IPVPS "
 echo -e "\e[0m Domain Name         : $DOMAIN "
-echo -e "\e[0m Client Name         : $Name "
-echo -e "\e[0m Expired Script      : $Exp "
 echo -e "\e[0m ISP/Provider Name   : $ISP "
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[44;1;39m               ⇱ • MAIN MENU • ⇲                  \E[0m"
