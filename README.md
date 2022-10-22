@@ -1,5 +1,5 @@
 
-# Autoscript VPS MultiPort By Reyz-V4 (Ubuntu 18-20/Debian 10)
+# Autoscript VPS MultiPort By Reyz-V4 (Debian10 Only)
 OVPN / SSH / XRAY VMESS / XRAY VLESS / XRAY TROJAN 
 
 ![OS](https://shields.io/badge/OS-Ubuntu%2018+-green?logo=ubuntu&style=for-the-badge) 
