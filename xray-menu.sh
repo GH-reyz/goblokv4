@@ -1039,7 +1039,6 @@ IZIN=$(curl https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep 
 name=$(curl -sS https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $IPVPS | awk '{print $2}')
 exp=$(curl -sS https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | grep $IPVPS | awk '{print $3}')
 IPVPS=$(curl -s icanhazip.com)
-domain=$(cat /etc/v2ray/domain)
 ISP=$(curl -sS ip-api.com | grep -w "isp" | awk '{print $3,$4,$5,$6,$7,$8,$9}' | cut -d'"' -f2 | cut -d',' -f1 | tee -a /etc/afak.conf)
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[332m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[33m"
 
