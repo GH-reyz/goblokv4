@@ -1034,6 +1034,18 @@ exp=$(curl -sS https://raw.githubusercontent.com/GH-reyz/registerv4/main/ip | gr
 IPVPS=$(curl -s icanhazip.com)
 domain=$(cat /etc/v2ray/domain)
 ISP=$(curl -sS ip-api.com | grep -w "isp" | awk '{print $3,$4,$5,$6,$7,$8,$9}' | cut -d'"' -f2 | cut -d',' -f1 | tee -a /etc/afak.conf)
+#Download/Upload today
+dtoday="$(vnstat -i eth0 | grep "today" | awk '{print $2" "substr ($3, 1, 1)}')"
+utoday="$(vnstat -i eth0 | grep "today" | awk '{print $5" "substr ($6, 1, 1)}')"
+ttoday="$(vnstat -i eth0 | grep "today" | awk '{print $8" "substr ($9, 1, 1)}')"
+#Download/Upload yesterday
+dyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $2" "substr ($3, 1, 1)}')"
+uyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $5" "substr ($6, 1, 1)}')"
+tyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}')"
+#Download/Upload current month
+dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($4, 1, 1)}')"
+umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')"
+tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[332m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[33m"
 
 chck_pid() {
@@ -1062,6 +1074,11 @@ echo -e "\e[0;32m Script Version      : SC (V4)"
 echo -e "\e[0;32m ISP/Provider Name   : $ISP "
 echo -e "\e[0;32m Client Name         : $name"
 echo -e "\e[0;32m Validity Script     : $exp"
+echo -e "\033[0;31m──────────────────────────────────────────────────\033[33m"
+echo -e "  \e[33m Traffic\e[0m       \e[33mToday      Yesterday     Month   "
+echo -e "  \e[33m Download\e[0m      $dtoday    $dyest       $dmon   \e[0m"
+echo -e "  \e[33m Upload\e[0m        $utoday    $uyest       $umon   \e[0m"
+echo -e "  \e[33m Total\e[0m       \033[1;36m  $ttoday    $tyest       $tmon  \e[0m "
 echo -e "\033[0;31m──────────────────────────────────────────────────\033[33m"
 echo -e "\E[47;1;30m               ⇱ • SSH  MENU • ⇲                  \E[33m"
 echo -e "\033[0;31m──────────────────────────────────────────────────\033[33m"
